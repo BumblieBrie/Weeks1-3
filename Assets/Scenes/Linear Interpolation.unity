@@ -466,6 +466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054639299}
   - component: {fileID: 1054639298}
+  - component: {fileID: 1054639300}
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
@@ -543,6 +544,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1054639300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054639297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a079ace4b7a7364b87fcf8b8aa72881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.004760742
+      inSlope: 9.253158
+      outSlope: 9.253158
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.14389971
+      value: 1.3362875
+      inSlope: 2.581289
+      outSlope: 2.581289
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.32103652
+      value: 0.6116953
+      inSlope: 0.68702507
+      outSlope: 0.68702507
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.4459012
+      value: 1.2940345
+      inSlope: -9.176475
+      outSlope: -9.176475
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.09742464
+    - serializedVersion: 3
+      time: 0.75820255
+      value: 1.4324802
+      inSlope: -24.904917
+      outSlope: -24.904917
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.044485003
+    - serializedVersion: 3
+      time: 1.0208435
+      value: 2.0023804
+      inSlope: 2.169883
+      outSlope: 2.169883
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  t: 0
 --- !u!1 &1933001175
 GameObject:
   m_ObjectHideFlags: 0
