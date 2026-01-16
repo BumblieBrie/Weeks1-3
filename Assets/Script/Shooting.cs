@@ -15,15 +15,16 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        t += Time.deltaTime;
+        t += Time.deltaTime * 0.5f;
         transform.position = Vector2.Lerp(beginPos, endPos, t);
-        Vector2 screenPos = Camera.main.ScreenToWorldPoint(endPos);
 
         if (transform.position == (Vector3)endPos)
         {
             beginPos = endPos;
-            endPos = new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height));
+            Vector2 screenPos = Camera.main.ScreenToWorldPoint(new Vector2(Random.Range(0, Screen.width), Random.Range(0, Screen.height)));
+            endPos = screenPos;
             t = 0f;
+
         }
     }
 }
