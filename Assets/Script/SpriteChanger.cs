@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,7 +6,8 @@ public class SpriteChanger : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public Color col; // adds a color picker to the inspector
-    public Sprite[] barrels; // array of sprites
+    //public Sprite[] barrels; // array of sprites
+    public List<Sprite> barrels; // make sure to delete 'using Nunit Framework' if you use a list
     public int randomNumber;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,7 +28,12 @@ public class SpriteChanger : MonoBehaviour
         if (Keyboard.current.anyKey.wasPressedThisFrame)
         {
             //PickARandomColor();
-            PickARandomSprite();
+            Debug.Log("Try to change the sprite");
+            if (barrels.Count > 0)
+            {
+                PickARandomSprite();
+            }
+     
         }
 
 
@@ -48,6 +55,13 @@ public class SpriteChanger : MonoBehaviour
         {
             spriteRenderer.color = Color.white;
         }
+
+        if (Mouse.current.leftButton.wasPressedThisFrame == true && barrels.Count > 0)
+        {
+
+            barrels.RemoveAt(0); // gives errors if you remove the whole list when you haven't set the extra conditional
+
+        }
     }
 
     void PickARandomColor()
@@ -60,7 +74,7 @@ public class SpriteChanger : MonoBehaviour
         //get a random number between 0 and 2
         //use that to set the sprite
 
-        randomNumber = Random.Range(0, barrels.Length); //max is exclusive
+        randomNumber = Random.Range(0, barrels.Count); //max is exclusive
 
         spriteRenderer.sprite = barrels[randomNumber];
 
