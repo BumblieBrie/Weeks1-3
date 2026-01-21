@@ -24,6 +24,10 @@ public class SpriteChanger : MonoBehaviour
         }
         */
 
+        // spriteRenderer.sprite.bounds.Contains() IS NOT CORRECT DO NOT USE
+        // USE THIS: spriteRenderer.bounds.Contains() is at the correct position to follow the sprite across the screen
+
+
         //get the mouse position
         //is it over the sprite?
         //Y: use the color variable
