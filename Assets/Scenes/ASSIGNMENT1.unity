@@ -317,6 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 384698383}
   - component: {fileID: 384698382}
+  - component: {fileID: 384698384}
   m_Layer: 0
   m_Name: Ladybug
   m_TagString: Untagged
@@ -394,6 +395,116 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &384698384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384698381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5abbad6af61f0246a7e818d70e9ae1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseIsOverMe: 0
+  vibrate:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.074802384
+      outSlope: -0.074802384
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.07946779
+      value: 0.0908072
+      inSlope: 0.5438775
+      outSlope: 0.5438775
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.16141576
+      value: -0.033910066
+      inSlope: -3.29846
+      outSlope: -3.29846
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.06480916
+      outWeight: 0.051539145
+    - serializedVersion: 3
+      time: 0.28820065
+      value: 0.002316326
+      inSlope: 0.49606317
+      outSlope: 0.49606317
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.37385398
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.33579135
+      value: 0.09076476
+      inSlope: 0.35435963
+      outSlope: 0.35435963
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5245324
+      value: 0.015038691
+      inSlope: 2.8933048
+      outSlope: 2.8933048
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.10395147
+    - serializedVersion: 3
+      time: 0.6509557
+      value: -0.022943504
+      inSlope: -0.99208814
+      outSlope: -0.99208814
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.67143446
+      value: -0.074693955
+      inSlope: -1.0667378
+      outSlope: -1.0667378
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.28477433
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.8487105
+      value: 0.081595495
+      inSlope: -0.5812446
+      outSlope: -0.5812446
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.26115498
+      outWeight: 0.2439559
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  t: 0
 --- !u!1 &436824761
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +578,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 5352286359449648278, guid: 710ef5b7b98fa2b4393cfce59515ed58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
