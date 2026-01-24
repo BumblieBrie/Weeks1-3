@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RaindropMovement : MonoBehaviour
 {
-    public float speed = 0.05f;
+    public float speed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,6 +20,7 @@ public class RaindropMovement : MonoBehaviour
         //uhhh fix the raindrop from falling eternally
         //make it so that it appears at the top of the screen no matter what size the screen is
 ;
+        speed = Random.Range(3f, 5f) * Time.deltaTime;
 
         Vector2 newPosition = transform.position;
         newPosition.y -= speed;
